@@ -1,0 +1,43 @@
+---
+title: "This is title"
+authors: kjlk
+editor_options:
+  chunk_output_type: console
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  word_document: 
+    reference_docx: !expr file.path("metadata", "mytemplate_1.docx") 
+  html_document:
+    df_print: paged
+bibliography: "`r here::here('metadata', 'PR711_References.bib')`"
+csl: "`r here::here('metadata', 'environmental-research.csl')`"
+---
+
+
+```{r, include=FALSE}
+#install.packages("here")
+library(here)
+#library(tibble)
+#library(tidyverse)
+#library(formattable)
+#library(data.table)
+#library(kableExtra)
+#library(knitr)
+#library(flextable)
+#library(readxl)
+```
+
+
+
+[@Julvez2011; @Signes-Pastor2019a; @Valera-Gran2017]. 
+
+
+# References
+
+<div id="refs"></div> 
+
+# Tables
+
+
+
+# Figures
